@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Summit Rush - 3D Mountain Climb</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app"></div>
+<div id="hud" class="hidden">
+  <div class="stats"><span id="score">Score 0</span><span id="lives">♥♥♥</span><span id="alt">0 m</span></div>
+  <div class="bar"><div id="prog"></div><span>⛰ Summit</span></div>
+  <div class="btns"><button id="muteBtn" title="Mute (M)">🔊</button><button id="pauseBtn" title="Pause (P)">⏸</button></div>
+</div>
+<div id="toast"></div>
+<div id="menu" class="ov"><div class="card"><h1>Summit Rush</h1><p>Climb the mountain. Grab coins. Dodge falling rocks!</p>
+<ul><li><b>Arrows / WASD</b> move</li><li><b>Space</b> jump &nbsp; <b>Shift</b> run</li><li>Push against orange rock pillars to <b>climb</b></li><li><b>Q / E</b> or drag mouse: camera &nbsp; <b>P</b> pause</li></ul>
+<button id="startBtn" class="big">Start Climb</button></div></div>
+<div id="pause" class="ov hidden"><div class="card"><h2>Paused</h2><button id="resumeBtn" class="big">Resume</button><button id="restartBtn">Restart</button><button id="menuBtn">Main Menu</button></div></div>
+<div id="over" class="ov hidden"><div class="card"><h2>Game Over</h2><p id="overTxt"></p><button id="retryBtn" class="big">Try Again</button><button id="menuBtn2">Main Menu</button></div></div>
+<div id="win" class="ov hidden"><div class="card"><h2>🏔 Summit Reached!</h2><p id="winTxt"></p><button id="againBtn" class="big">Play Again</button><button id="menuBtn3">Main Menu</button></div></div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
